@@ -1,0 +1,178 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 85%;
+    margin: 5rem auto;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h2 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.heading p {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    line-height: 1.5rem;
+}
+
+
+.card {
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px hsl(229, 6%, 66%);
+}
+
+.card h3, .card p {
+    padding: 0 2rem;
+}
+
+.card h3 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 1rem 0 .5rem;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.5rem;
+}
+
+.card img {
+    width: 4rem;
+    height: auto;
+    margin: 2rem 2rem 1rem ;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+#supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+#team {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+#karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+#calc {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.attribution {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 600px) {
+    h1, h2 {
+        font-size: 3rem;
+    }
+
+    .heading p {
+        max-width: 640px;
+        font-size: 1.2rem;
+        margin: 1rem auto 4rem;
+        line-height: 2rem;
+    }
+.cards {
+    display: flex;
+    justify-content: space-around;
+    max-height: 600px;
+
+}
+
+.column {
+    width: 30%;
+}
+
+.col-1, .col-3 {
+    align-self: center;
+}
+
+.card {
+    width: 365px;
+    height: 250px;
+}
+
+#team {
+    margin-bottom: 2.5rem;
+}
+
+}
